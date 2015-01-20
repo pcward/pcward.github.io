@@ -1,0 +1,10 @@
+<p>I <em>really</em> like <a href="http://andrewgelman.com/" target="_blank">Andrew Gelman</a>. He always presents statistics in a straightforward way. One of my favorite blog posts of his is from 2010 (&#8220;<em>What do practitioners need to know about regression?&#8221;</em>), where he outlines a few simple rules of thumb for doing statistical analysis.</p>
+<p>These rules probably cover the vast majority of work you&#8217;ll ever need to do. <em>Read them and take them to heart. Then read them again.</em> And post them where you can clearly see them. Below I&#8217;ve quoted them, but you can find the <a href="http://andrewgelman.com/2010/12/what_do_practit/" target="_blank">original post here</a>.</p>
+<p>Without further ado:</p>
+<blockquote>
+<p>The difference between “significant” and “non-significant” is not itself statistically significant.</p>
+<p>Don’t just analyze your variables straight out of the box. You can break continuous variables into categories (for example, instead of age and age-squared, you can use indicators for 19-29, 30-44, 45-64, 65+), and, from the other direction, you can average several related variables to create a combined score.</p>
+<p>You can typically treat a discrete outcome (for example, responses on a 1-5 scale) as numeric. Don’t worry about ordered logit/probit/etc., just run your regression already.</p>
+<p>Take the two most important input variables in your regression and throw in their interaction.</p>
+<p>The key assumptions of a regression model are validity and additivity. Except when you’re focused on predictions, don’t spend one minute worrying about distributional issues such as normality or equal variance of the errors.</p>
+</blockquote>
