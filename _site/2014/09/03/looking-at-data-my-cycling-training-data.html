@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10,6 +10,9 @@
       ga('create', 'UA-47862393-1', 'auto');
       ga('send', 'pageview');
 
+      if (document.referrer == "http://chris.ward.is/" or document.referrer == "http://pcward.tumblr.com") {
+        $('.overlay').toggle();
+      }
     </script>
 
     <meta charset="utf-8">
@@ -57,34 +60,47 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/index.html">Home</a></li>
             <li><a href="http://www.linkedin.com/in/pcward">Resume</a></li>
+            <li><a href="/contact.html">About</a></li>
             <li><a href="/blog.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
             <li><a href="https://twitter.com/pcward">Twitter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+    <div class="overlay">Hey! Just a heads up I've moved to pcward.github.io!</div>
 
-<div id="white">
+
+<div class="white">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>Looking at Data: My Cycling Training Data</h4>
-				<h5>2014-09-03 16:03:00 -0600</h5>
+				<h5 class="post_date">2014-09-03 16:03:00 -0600</h5>
 				<p><img alt="image" src="https://31.media.tumblr.com/3daca28a5e446fb17a7b15d1e5a9065a/tumblr_inline_nbciirFPf11ql2b9o.png"/></p>
 
 <p>Looks like I&#8217;ve been slacking on the bike so far this week, compared to last week! This week&#8217;s data is the darker colored stuff, last week&#8217;s data is the lighter colored stuff.</p>
 <p>I pulled the data from my <a href="http://cyclinganalytics.com" target="_blank">Cycling Analytics</a> account using their <a href="http://www.cyclinganalytics.com/developer/api" target="_blank">API</a>. I then massaged it with a Python script I wrote to augment some of the charting I felt was missing in the Cycling Analytics dashboard (I know this stuff is available out of the box from TrainingPeaks, but 1) it was fun to program the API myself, and 2) I refuse to pay for TrainingPeaks).</p>
 
-				<p><a href="{"layout"=>"post", "title"=>"Looking at Data: 2014 Tour of Utah", "date"=>2014-08-22 11:01:00 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/95470811623/looking-at-data-2014-tour-of-utah", "url"=>"/2014/08/22/looking-at-data-2014-tour-of-utah.html", "dir"=>"/2014/08/22", "id"=>"/2014/08/22/looking-at-data-2014-tour-of-utah", "categories"=>[], "next"=><Post: /2014/09/03/looking-at-data-my-cycling-training-data>, "previous"=><Post: /2014/04/30/looking-at-data-2007-nsf-research-expenditures>, "path"=>"_posts/2014-08-22-looking-at-data-2014-tour-of-utah.html", "content"=>"<p>It&#8217;s been a while since I posted anything in my Looking at Data series, but with the 2014 edition of the Larry H. Miller Tour of Utah wrapping up last week I thought I&#8217;d take a look at the data, since I&#8217;m, you know, into cycling, and this race took place in my back yard, so to speak.</p>\n<p>First off, where do the riders hail from?</p>\n<p>\n<script src=\"https://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"720\" width=\"1024\"><param name=\"host_url\" value=\"https%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"site_root\" value=\"\"><param name=\"name\" value=\"2014TourofUtah/RiderHomeCountry\"><param name=\"tabs\" value=\"yes\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"https://public.tableausoftware.com/static/images/20/2014TourofUtah/RiderHomeCountry/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"></object></div>\n<div>\n<div><a href=\"http://www.tableausoftware.com/public/about-tableau-products?ref=https://public.tableausoftware.com/views/2014TourofUtah/RiderHomeCountry\" target=\"_blank\">Learn About Tableau</a></div>\n</div>\n<p>Not too surprising for a Tier-2 race, most riders come from the host country, in this case the U.S.</p>\n<p>Second up, the stage results:</p>\n<p>\n<script src=\"https://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"720\" width=\"1024\"><param name=\"host_url\" value=\"https%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"site_root\" value=\"\"><param name=\"name\" value=\"2014TourofUtah/StageResults\"><param name=\"tabs\" value=\"yes\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"https://public.tableausoftware.com/static/images/20/2014TourofUtah/StageResults/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"></object></div>\n<div>\n<div><a href=\"http://www.tableausoftware.com/public/about-tableau-products?ref=https://public.tableausoftware.com/views/2014TourofUtah/StageResults\" target=\"_blank\">Learn About Tableau</a></div>\n</div>\n<p>Finally, some meat and potatoes:</p>\n<p>\n<script src=\"https://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"720\" width=\"1024\"><param name=\"host_url\" value=\"https%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"site_root\" value=\"\"><param name=\"name\" value=\"2014TourofUtah/TimingSpreadAttrition\"><param name=\"tabs\" value=\"yes\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"https://public.tableausoftware.com/static/images/20/2014TourofUtah/TimingSpreadAttrition/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"></object></div>\n<div>\n<div><a href=\"http://www.tableausoftware.com/public/about-tableau-products?ref=https://public.tableausoftware.com/views/2014TourofUtah/TimingSpreadAttrition\" target=\"_blank\">Learn About Tableau</a></div>\n</div>\n<p>It&#8217;s interesting to note that the spread in time by the end of the race (stage 7) is quite large. The rider with the cumulatively slowest time was over 1.5 hours behind the overall winner, Tom Danielson. Perhaps its due to a particularly poor showing in stages 4, 6, and 7? If you look at the box and whisker plot of time spread, you&#8217;ll notice that those stages have large spreads in times. Stage 4, from Ogden to Powder Mountain, was a pretty hilly stage, with a nasty climb to the mountain top finish. Stage 6, from Salt Lake City to Snowbird, was also a grueling stage, with over 12,000 ft of elevation gain, and Stage 7, although a little shorter, featured two really hard climbs at Wolf Creek Pass and Empire Pass. The common denominator, besides the endless vertical racked up over the course of the stages, was the high altitude. Most of the mountain finishes, and the hard climbs, took place above 8000 feet in elevation. I bet a lot of riders weren&#8217;t used to that&#8230;</p>\n<p>All that climbing is probably also why you see attrition increasing throughout the race, especially after stages 5 and 6. There was a 7% dropoff in the number of riders starting stage 7 compared to stage 6!</p>\n", "excerpt"=>"<p>It&#8217;s been a while since I posted anything in my Looking at Data series, but with the 2014 edition of the Larry H. Miller Tour of Utah wrapping up last week I thought I&#8217;d take a look at the data, since I&#8217;m, you know, into cycling, and this race took place in my back yard, so to speak.</p>\n<p>First off, where do the riders hail from?</p>\n<p>\n<script src=\"https://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"720\" width=\"1024\"><param name=\"host_url\" value=\"https%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"site_root\" value=\"\"><param name=\"name\" value=\"2014TourofUtah/RiderHomeCountry\"><param name=\"tabs\" value=\"yes\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"https://public.tableausoftware.com/static/images/20/2014TourofUtah/RiderHomeCountry/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"></object></div>\n<div>\n<div><a href=\"http://www.tableausoftware.com/public/about-tableau-products?ref=https://public.tableausoftware.com/views/2014TourofUtah/RiderHomeCountry\" target=\"_blank\">Learn About Tableau</a></div>\n</div>\n<p>Not too surprising for a Tier-2 race, most riders come from the host country, in this case the U.S.</p>\n<p>Second up, the stage results:</p>\n<p>\n<script src=\"https://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"720\" width=\"1024\"><param name=\"host_url\" value=\"https%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"site_root\" value=\"\"><param name=\"name\" value=\"2014TourofUtah/StageResults\"><param name=\"tabs\" value=\"yes\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"https://public.tableausoftware.com/static/images/20/2014TourofUtah/StageResults/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"></object></div>\n<div>\n<div><a href=\"http://www.tableausoftware.com/public/about-tableau-products?ref=https://public.tableausoftware.com/views/2014TourofUtah/StageResults\" target=\"_blank\">Learn About Tableau</a></div>\n</div>\n<p>Finally, some meat and potatoes:</p>\n<p>\n<script src=\"https://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"720\" width=\"1024\"><param name=\"host_url\" value=\"https%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"site_root\" value=\"\"><param name=\"name\" value=\"2014TourofUtah/TimingSpreadAttrition\"><param name=\"tabs\" value=\"yes\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"https://public.tableausoftware.com/static/images/20/2014TourofUtah/TimingSpreadAttrition/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"></object></div>\n<div>\n<div><a href=\"http://www.tableausoftware.com/public/about-tableau-products?ref=https://public.tableausoftware.com/views/2014TourofUtah/TimingSpreadAttrition\" target=\"_blank\">Learn About Tableau</a></div>\n</div>\n<p>It&#8217;s interesting to note that the spread in time by the end of the race (stage 7) is quite large. The rider with the cumulatively slowest time was over 1.5 hours behind the overall winner, Tom Danielson. Perhaps its due to a particularly poor showing in stages 4, 6, and 7? If you look at the box and whisker plot of time spread, you&#8217;ll notice that those stages have large spreads in times. Stage 4, from Ogden to Powder Mountain, was a pretty hilly stage, with a nasty climb to the mountain top finish. Stage 6, from Salt Lake City to Snowbird, was also a grueling stage, with over 12,000 ft of elevation gain, and Stage 7, although a little shorter, featured two really hard climbs at Wolf Creek Pass and Empire Pass. The common denominator, besides the endless vertical racked up over the course of the stages, was the high altitude. Most of the mountain finishes, and the hard climbs, took place above 8000 feet in elevation. I bet a lot of riders weren&#8217;t used to that&#8230;</p>\n<p>All that climbing is probably also why you see attrition increasing throughout the race, especially after stages 5 and 6. There was a 7% dropoff in the number of riders starting stage 7 compared to stage 6!</p>\n\n\n"}">< Previous</a> | <a href="{"layout"=>"post", "title"=>"I told you so!", "date"=>2014-10-13 09:50:05 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/99912177558/i-told-you-so", "url"=>"/2014/10/13/i-told-you-so.html", "dir"=>"/2014/10/13", "id"=>"/2014/10/13/i-told-you-so", "categories"=>[], "next"=>nil, "previous"=><Post: /2014/09/03/looking-at-data-my-cycling-training-data>, "path"=>"_posts/2014-10-13-i-told-you-so.html", "content"=>"<p>Sunlight in Utah correlates with the number of people who fell out of a building and died!</p>\n<p><img src=\"http://tylervigen.com/correlation_project/correlation_images/sunlight-in-utah_number-of-people-who-fell-out-of-a-building-and-died.png\"/></p>\n<p>(Correlation: 0.60)</p>\n<p><a href=\"http://tylervigen.com/view_correlation?id=6036\" target=\"_blank\">Link</a>.</p>\n", "excerpt"=>"<p>Sunlight in Utah correlates with the number of people who fell out of a building and died!</p>\n<p><img src=\"http://tylervigen.com/correlation_project/correlation_images/sunlight-in-utah_number-of-people-who-fell-out-of-a-building-and-died.png\"/></p>\n<p>(Correlation: 0.60)</p>\n<p><a href=\"http://tylervigen.com/view_correlation?id=6036\" target=\"_blank\">Link</a>.</p>\n\n\n"}">Next ></a></p>
+				
 			</div>
 
 		</div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /white -->
 
-	
+<div class="grey">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<b><a href="/2014/08/22/looking-at-data-2014-tour-of-utah.html">< Previous</a></b> | <b><a href="/2014/10/13/i-told-you-so.html">Next ></a></b>
+			</div>
+
+		</div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /white -->
+
+
 	
 
 	<!-- +++++ Footer Section +++++ -->
@@ -123,19 +139,54 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var post_dates = $(".post_date");
 
-		post_dates.each(function( index ) {
-			var post_date = $( this ).text().split("-")
-		  	var yr = post_date[0];
-			var mo = months[post_date[1]-1];
-			var d = post_date[2].split(" ")[0];
-
-			if (d.charAt(0) === "0")
-				d = d.substring(1);
-			$( this ).text(mo + " " + d + ", " + yr);
+    	var i = 0;
+    	$('.post').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white');
+		  }
+		  else {
+		  	$(this).addClass('grey');
+		  }
+		  i++;
 		});
+
+    	var i = 0;
+    	$('.listing').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white_compact');
+		  }
+		  else {
+		  	$(this).addClass('grey_compact');
+		  }
+		  i++;
+		});
+
+    	function post_date_formatter() {
+			var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var post_dates = $(".post_date");
+
+			post_dates.each(function( index ) {
+				var post_date = $( this ).text().split("-")
+			  	var yr = post_date[0];
+				var mo = post_date[1];
+				var d = post_date[2].split(" ")[0];
+
+				if (d.charAt(0) === "0")
+					d = d.substring(1);
+
+				if (window.innerWidth < 768) {
+					$( this ).text(mo + "/" + d + "/" + yr.substring(2));
+				}
+				else {
+					$( this ).text(months[mo-1] + " " + d + ", " + yr);
+				}
+			});
+
+		}
+
+		$( window ).resize(post_date_formatter());
+		
 	</script>
   </body>
 </html>

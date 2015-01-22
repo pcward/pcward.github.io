@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10,6 +10,9 @@
       ga('create', 'UA-47862393-1', 'auto');
       ga('send', 'pageview');
 
+      if (document.referrer == "http://chris.ward.is/" or document.referrer == "http://pcward.tumblr.com") {
+        $('.overlay').toggle();
+      }
     </script>
 
     <meta charset="utf-8">
@@ -57,21 +60,23 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/index.html">Home</a></li>
             <li><a href="http://www.linkedin.com/in/pcward">Resume</a></li>
+            <li><a href="/contact.html">About</a></li>
             <li><a href="/blog.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
             <li><a href="https://twitter.com/pcward">Twitter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+    <div class="overlay">Hey! Just a heads up I've moved to pcward.github.io!</div>
 
-<div id="white">
+
+<div class="white">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>1. No matter how much data you collect, you never have all the data you want or need</h4>
-				<h5>2012-09-15 08:21:00 -0600</h5>
+				<h5 class="post_date">2012-09-15 08:21:00 -0600</h5>
 				<p>People often get caught up in the <em>more-is-better</em> mentality when it comes to data. Of course, larger quantities are usually better, and time-series and panel data is superior to cross-sectional data. But that&#8217;s not what I&#8217;m talking about here. </p>
 <p>When I refer to data wants versus data needs I refer to the actual variables you&#8217;re collecting.</p>
 <p>After you&#8217;ve established a set of business objectives, and you&#8217;ve gone to the trouble of quantifying those objectives in a set of goals the next step is to spend some time figuring out the variables you need in order to assess how you&#8217;re doing against your goals. I basically see two approaches at this junction:</p>
@@ -87,14 +92,25 @@
 <p>Is it possible that some of the things we <em>want </em>can be derived from simpler variables? Being surgical about the things we collect doesn&#8217;t preclude us from running expansive and nuanced analysis. It also helps us remain friends with the guys actually implementing the process, and it reduces costs. </p>
 <p>Fundamentally, it comes down to letting ourselves be guided by <em>Occam&#8217;s Razor</em>, despite the temptations to go hog wild in the candy store that can be Big Data.</p>
 
-				<p><a href="{"layout"=>"post", "title"=>"How are SaaS companies revamping their marketing to keep pace with changing buyer behavior? ", "date"=>2012-09-12 11:35:00 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/31406568925/how-are-saas-companies-revamping-their-marketing", "url"=>"/2012/09/12/how-are-saas-companies-revamping-their-marketing.html", "dir"=>"/2012/09/12", "id"=>"/2012/09/12/how-are-saas-companies-revamping-their-marketing", "categories"=>[], "next"=><Post: /2012/09/15/1-no-matter-how-much-data-you-collect-you-never>, "previous"=><Post: /2012/09/10/data-driven-business-lessons-learned-from-my-old>, "path"=>"_posts/2012-09-12-how-are-saas-companies-revamping-their-marketing.html", "content"=>"<p>This is the question posed over in the <a href=\"http://www.linkedin.com/groups?gid=62352\" target=\"_blank\">Digital Marketing group on LinkedIn (you should check it out)</a> right now. People have pointed out the need for involving more than just sales and marketing in recruiting new customers, which I think is an excellent point. 37Signals is a great example of this, where the founders are actively involved with their user community.</p>\n<p>There has also been quite a good discussion about the sales funnel needing to become more a &#8220;funnel of interest,&#8221; with a push towards multiple opportunities to boost interest levels. This ties in with some thinking I&#8217;ve been doing around SaaS companies and trials as a sales/marketing tool. Not enough SaaS companies use trials as well as they could. Lots of times, user trials are completely unguided, which works really well for advanced/expert users. But you run the risk of losing a lot of potentially solid leads because they, perhaps, become overwhelmed by &#8220;Microsoft Office syndrome,&#8221; the trial can be seen as too complex.</p>\n<p>Finally, a recommended read: <a href=\"http://goo.gl/2v1pE\" target=\"_blank\">7 Marketing 3.0 Lessons from Inbound 2012</a>.</p>\n", "excerpt"=>"<p>This is the question posed over in the <a href=\"http://www.linkedin.com/groups?gid=62352\" target=\"_blank\">Digital Marketing group on LinkedIn (you should check it out)</a> right now. People have pointed out the need for involving more than just sales and marketing in recruiting new customers, which I think is an excellent point. 37Signals is a great example of this, where the founders are actively involved with their user community.</p>\n<p>There has also been quite a good discussion about the sales funnel needing to become more a &#8220;funnel of interest,&#8221; with a push towards multiple opportunities to boost interest levels. This ties in with some thinking I&#8217;ve been doing around SaaS companies and trials as a sales/marketing tool. Not enough SaaS companies use trials as well as they could. Lots of times, user trials are completely unguided, which works really well for advanced/expert users. But you run the risk of losing a lot of potentially solid leads because they, perhaps, become overwhelmed by &#8220;Microsoft Office syndrome,&#8221; the trial can be seen as too complex.</p>\n<p>Finally, a recommended read: <a href=\"http://goo.gl/2v1pE\" target=\"_blank\">7 Marketing 3.0 Lessons from Inbound 2012</a>.</p>\n\n\n"}">< Previous</a> | <a href="{"layout"=>"post", "title"=>"2. Remember K.I.S.S.", "date"=>2012-09-16 18:47:00 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/31698838376/2-remember-k-i-s-s", "url"=>"/2012/09/16/2-remember-k-i-s-s.html", "dir"=>"/2012/09/16", "id"=>"/2012/09/16/2-remember-k-i-s-s", "categories"=>[], "next"=><Post: /2012/09/17/search-marketing-outlook-for-the-remainder-of-2012>, "previous"=><Post: /2012/09/15/1-no-matter-how-much-data-you-collect-you-never>, "path"=>"_posts/2012-09-16-2-remember-k-i-s-s.html", "content"=>"<p><em>When attacking a data-driven business question, keep it simple, stupid!</em></p>\n<p>At least do this until you have a good understanding of the problem, and your most important stakeholders are on board and do too.</p>\n<p>Doing this accomplishes a few critical things:</p>\n<p>One, you save yourself a lot of unnecessary work if your analysis isn&#8217;t what your stakeholders want.</p>\n<p>Two, keeping your analysis straightforward builds trust in your recommendations and findings. People won&#8217;t get the impression you&#8217;re trying to pull wool over their eyes.</p>\n<p>And three, there&#8217;s usually just not a really good reason for  sophisticated statistics in most real-world analytics. At least not where the field stands today. Besides, why start an (unnecessary) arms race when you don&#8217;t have to? </p>\n<p><em>Clarity trumps sophistication, every time.</em></p>\n", "excerpt"=>"<p><em>When attacking a data-driven business question, keep it simple, stupid!</em></p>\n<p>At least do this until you have a good understanding of the problem, and your most important stakeholders are on board and do too.</p>\n<p>Doing this accomplishes a few critical things:</p>\n<p>One, you save yourself a lot of unnecessary work if your analysis isn&#8217;t what your stakeholders want.</p>\n<p>Two, keeping your analysis straightforward builds trust in your recommendations and findings. People won&#8217;t get the impression you&#8217;re trying to pull wool over their eyes.</p>\n<p>And three, there&#8217;s usually just not a really good reason for  sophisticated statistics in most real-world analytics. At least not where the field stands today. Besides, why start an (unnecessary) arms race when you don&#8217;t have to? </p>\n<p><em>Clarity trumps sophistication, every time.</em></p>\n\n\n"}">Next ></a></p>
+				
 			</div>
 
 		</div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /white -->
 
-	
+<div class="grey">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<b><a href="/2012/09/12/how-are-saas-companies-revamping-their-marketing.html">< Previous</a></b> | <b><a href="/2012/09/16/2-remember-k-i-s-s.html">Next ></a></b>
+			</div>
+
+		</div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /white -->
+
+
 	
 
 	<!-- +++++ Footer Section +++++ -->
@@ -133,19 +149,54 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var post_dates = $(".post_date");
 
-		post_dates.each(function( index ) {
-			var post_date = $( this ).text().split("-")
-		  	var yr = post_date[0];
-			var mo = months[post_date[1]-1];
-			var d = post_date[2].split(" ")[0];
-
-			if (d.charAt(0) === "0")
-				d = d.substring(1);
-			$( this ).text(mo + " " + d + ", " + yr);
+    	var i = 0;
+    	$('.post').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white');
+		  }
+		  else {
+		  	$(this).addClass('grey');
+		  }
+		  i++;
 		});
+
+    	var i = 0;
+    	$('.listing').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white_compact');
+		  }
+		  else {
+		  	$(this).addClass('grey_compact');
+		  }
+		  i++;
+		});
+
+    	function post_date_formatter() {
+			var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var post_dates = $(".post_date");
+
+			post_dates.each(function( index ) {
+				var post_date = $( this ).text().split("-")
+			  	var yr = post_date[0];
+				var mo = post_date[1];
+				var d = post_date[2].split(" ")[0];
+
+				if (d.charAt(0) === "0")
+					d = d.substring(1);
+
+				if (window.innerWidth < 768) {
+					$( this ).text(mo + "/" + d + "/" + yr.substring(2));
+				}
+				else {
+					$( this ).text(months[mo-1] + " " + d + ", " + yr);
+				}
+			});
+
+		}
+
+		$( window ).resize(post_date_formatter());
+		
 	</script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10,6 +10,9 @@
       ga('create', 'UA-47862393-1', 'auto');
       ga('send', 'pageview');
 
+      if (document.referrer == "http://chris.ward.is/" or document.referrer == "http://pcward.tumblr.com") {
+        $('.overlay').toggle();
+      }
     </script>
 
     <meta charset="utf-8">
@@ -57,32 +60,45 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/index.html">Home</a></li>
             <li><a href="http://www.linkedin.com/in/pcward">Resume</a></li>
+            <li><a href="/contact.html">About</a></li>
             <li><a href="/blog.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
             <li><a href="https://twitter.com/pcward">Twitter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+    <div class="overlay">Hey! Just a heads up I've moved to pcward.github.io!</div>
 
-<div id="white">
+
+<div class="white">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>Parking tickets and probability</h4>
-				<h5>2013-08-28 15:51:00 -0600</h5>
+				<h5 class="post_date">2013-08-28 15:51:00 -0600</h5>
 				<p><strong>What is the chance to get a parking ticket in half an hour if the chance to get a ticket is 80% in 1 hour?</strong></p>
 <p><a href="http://math.stackexchange.com/questions/153607/what-is-the-chance-to-get-a-parking-ticket-in-half-an-hour-if-the-chance-to-get" target="_blank">http://math.stackexchange.com/questions/153607/what-is-the-chance-to-get-a-parking-ticket-in-half-an-hour-if-the-chance-to-get</a></p>
 
-				<p><a href="{"layout"=>"post", "title"=>"Data Scientists and Statisticians: Can’t We All Just Get Along", "date"=>2013-08-19 13:01:31 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/58716111722/data-scientists-and-statisticians-cant-we-all", "url"=>"/2013/08/19/data-scientists-and-statisticians-cant-we-all.html", "dir"=>"/2013/08/19", "id"=>"/2013/08/19/data-scientists-and-statisticians-cant-we-all", "categories"=>[], "next"=><Post: /2013/08/28/parking-tickets-and-probability>, "previous"=><Post: /2013/08/16/anchoring-and-the-power-of-persuasion>, "path"=>"_posts/2013-08-19-data-scientists-and-statisticians-cant-we-all.html", "content"=>"<p>With Data Science being the latest buzzword, what, really, is the difference between data science and statistics?</p>\n<blockquote>\n<p> The simple answer: statisticians do inference from samples, while data scientist tabulate parameters from censuses.</p>\n<p>- Robert Young (from the comments)</p>\n</blockquote>\n<p><a href=\"http://statistical-research.com/data-science-statistics-and-the-domain-expert\" target=\"_blank\">http://statistical-research.com/data-science-statistics-and-the-domain-expert</a></p>\n", "excerpt"=>"<p>With Data Science being the latest buzzword, what, really, is the difference between data science and statistics?</p>\n<blockquote>\n<p> The simple answer: statisticians do inference from samples, while data scientist tabulate parameters from censuses.</p>\n<p>- Robert Young (from the comments)</p>\n</blockquote>\n<p><a href=\"http://statistical-research.com/data-science-statistics-and-the-domain-expert\" target=\"_blank\">http://statistical-research.com/data-science-statistics-and-the-domain-expert</a></p>\n\n\n"}">< Previous</a> | <a href="{"layout"=>"post", "title"=>"On \"Small Data:\" The Necessity of Qualitative Research in the Age of Big Data", "date"=>2013-09-09 11:21:53 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/60763671126/on-small-data-the-necessity-of-qualitative", "url"=>"/2013/09/09/on-small-data-the-necessity-of-qualitative.html", "dir"=>"/2013/09/09", "id"=>"/2013/09/09/on-small-data-the-necessity-of-qualitative", "categories"=>[], "next"=><Post: /2014/01/02/teens-arent-abandoning-facebook>, "previous"=><Post: /2013/08/28/parking-tickets-and-probability>, "path"=>"_posts/2013-09-09-on-small-data-the-necessity-of-qualitative.html", "content"=>"<p><span>I came across <a href=\"https://medium.com/design-ux/bca4159e9620\" target=\"_blank\">a post on Medium</a> that brilliantly makes the case for qualitative research: the point many of us seem to have forgotten as we deal with &#8220;bigger and bigger&#8221; data is that there are many things we can&#8217;t reliably stick numbers on.</span></p>\n<p>We&#8217;re increasingly living in a quantifiable world—if you look around you&#8217;ll notice we&#8217;re attempting to quantify learning in our schools (No Child Left Behind), our health (<a href=\"http://en.wikipedia.org/wiki/Quantified_Self\" target=\"_blank\">see: quantified self</a>), even something as un-quantifiable as love (eHarmony&#8217;s &#8220;29 Dimensions of Compatibility&#8221;). </p>\n<p><span>At work, we try to quantify our contributions in terms of dollars added to the bottom line (as a side note, how do you even do that if you are, say, a BI report monkey, producing something that isn&#8217;t inherently and directly revenue-generating?).</span></p>\n<p>Facebook and LinkedIn attempts to quantify our relationships through social network analysis. Google, likewise, attempts to put a number on the usefulness of a Web document to us using PageRank.</p>\n<p>The point is not everything is measurable by numbers. In the Web Analytics space, my sandbox, people try to measure &#8220;engagement&#8221; (whatever that is), with numbers. I have a hard time with that metric. A number representing how &#8220;engaged&#8221; someone is with your site? At best, a metric like this is a dull butter knife. It totally fails to capture the nuance of the user experience. It&#8217;s a totally lossy signal. Don&#8217;t get me wrong—I love and live data and numbers, but there&#8217;s tremendous value in actually talking to our users.</p>\n<p>The beauty of talking to actual users, instead of trying to imperfectly measuring them, is that you can get inside people&#8217;s minds in a way no KPI can. You can directly observe how people interact with your product. You can stop people at any time and ask them why they did something. You can ask them things like, &#8220;how can I make my product easier or better to use,&#8221; or &#8220;were you able to accomplish what you set out to do today with my product?&#8221;</p>\n<p>This kind of user research gives you super-valuable CONTEXT.</p>\n<p>There is one major drawback to qualitative user research. It&#8217;s time and resource intensive.</p>\n<p>Because it&#8217;s time and resource intensive, it is extremely hard to automate. Which is a roundabout way of saying: qualitative user research is expensive.</p>\n<p>Because qualitative user research is expensive, we typically operate with small sample sizes.</p>\n<p>Because the sample sizes are typically small (even microscopic in this age of Big Data), people have a natural aversion to trusting the findings.</p>\n<p>However, this is totally okay. It&#8217;s okay because this isn&#8217;t your only vector of understanding. Qualitative user research, remember, is a way to add context to your numbers. Qualitative user research gives you insights into user behavior that quantitative research can&#8217;t, and vice versa. There&#8217;s a symbiotic relationship between the two, and one is much stronger with the other.</p>\n<p>Another benefit of the small sample sizes is that it&#8217;s very easy to change roadblocks and fix problems as you go along. As soon as you identify a user experience problem you can stop and fix it. The beauty is that you&#8217;re not wasting valuable time on things that aren&#8217;t working. There&#8217;s a name for this—the RITE method—Rapid Iterative Testing and Evaluation. RITE lets qualitative user findings guide quantitative research; done right it minimizes grief and wasted time, and maximizes the return on a usability study.</p>\n<p><span>I&#8217;ve been rambling on for a while. Let me sum up the argument like so:</span></p>\n<p>Talking to real users provides context. Without context, your numbers are just numbers: they contain no meaning on their own. Quantitative analysis and qualitative analysis go hand-in-hand if you want to maximize your return on user research. </p>\n", "excerpt"=>"<p><span>I came across <a href=\"https://medium.com/design-ux/bca4159e9620\" target=\"_blank\">a post on Medium</a> that brilliantly makes the case for qualitative research: the point many of us seem to have forgotten as we deal with &#8220;bigger and bigger&#8221; data is that there are many things we can&#8217;t reliably stick numbers on.</span></p>\n<p>We&#8217;re increasingly living in a quantifiable world—if you look around you&#8217;ll notice we&#8217;re attempting to quantify learning in our schools (No Child Left Behind), our health (<a href=\"http://en.wikipedia.org/wiki/Quantified_Self\" target=\"_blank\">see: quantified self</a>), even something as un-quantifiable as love (eHarmony&#8217;s &#8220;29 Dimensions of Compatibility&#8221;). </p>\n<p><span>At work, we try to quantify our contributions in terms of dollars added to the bottom line (as a side note, how do you even do that if you are, say, a BI report monkey, producing something that isn&#8217;t inherently and directly revenue-generating?).</span></p>\n<p>Facebook and LinkedIn attempts to quantify our relationships through social network analysis. Google, likewise, attempts to put a number on the usefulness of a Web document to us using PageRank.</p>\n<p>The point is not everything is measurable by numbers. In the Web Analytics space, my sandbox, people try to measure &#8220;engagement&#8221; (whatever that is), with numbers. I have a hard time with that metric. A number representing how &#8220;engaged&#8221; someone is with your site? At best, a metric like this is a dull butter knife. It totally fails to capture the nuance of the user experience. It&#8217;s a totally lossy signal. Don&#8217;t get me wrong—I love and live data and numbers, but there&#8217;s tremendous value in actually talking to our users.</p>\n<p>The beauty of talking to actual users, instead of trying to imperfectly measuring them, is that you can get inside people&#8217;s minds in a way no KPI can. You can directly observe how people interact with your product. You can stop people at any time and ask them why they did something. You can ask them things like, &#8220;how can I make my product easier or better to use,&#8221; or &#8220;were you able to accomplish what you set out to do today with my product?&#8221;</p>\n<p>This kind of user research gives you super-valuable CONTEXT.</p>\n<p>There is one major drawback to qualitative user research. It&#8217;s time and resource intensive.</p>\n<p>Because it&#8217;s time and resource intensive, it is extremely hard to automate. Which is a roundabout way of saying: qualitative user research is expensive.</p>\n<p>Because qualitative user research is expensive, we typically operate with small sample sizes.</p>\n<p>Because the sample sizes are typically small (even microscopic in this age of Big Data), people have a natural aversion to trusting the findings.</p>\n<p>However, this is totally okay. It&#8217;s okay because this isn&#8217;t your only vector of understanding. Qualitative user research, remember, is a way to add context to your numbers. Qualitative user research gives you insights into user behavior that quantitative research can&#8217;t, and vice versa. There&#8217;s a symbiotic relationship between the two, and one is much stronger with the other.</p>\n<p>Another benefit of the small sample sizes is that it&#8217;s very easy to change roadblocks and fix problems as you go along. As soon as you identify a user experience problem you can stop and fix it. The beauty is that you&#8217;re not wasting valuable time on things that aren&#8217;t working. There&#8217;s a name for this—the RITE method—Rapid Iterative Testing and Evaluation. RITE lets qualitative user findings guide quantitative research; done right it minimizes grief and wasted time, and maximizes the return on a usability study.</p>\n<p><span>I&#8217;ve been rambling on for a while. Let me sum up the argument like so:</span></p>\n<p>Talking to real users provides context. Without context, your numbers are just numbers: they contain no meaning on their own. Quantitative analysis and qualitative analysis go hand-in-hand if you want to maximize your return on user research. </p>\n\n\n"}">Next ></a></p>
+				
 			</div>
 
 		</div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /white -->
 
-	
+<div class="grey">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<b><a href="/2013/08/19/data-scientists-and-statisticians-cant-we-all.html">< Previous</a></b> | <b><a href="/2013/09/09/on-small-data-the-necessity-of-qualitative.html">Next ></a></b>
+			</div>
+
+		</div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /white -->
+
+
 	
 
 	<!-- +++++ Footer Section +++++ -->
@@ -121,19 +137,54 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var post_dates = $(".post_date");
 
-		post_dates.each(function( index ) {
-			var post_date = $( this ).text().split("-")
-		  	var yr = post_date[0];
-			var mo = months[post_date[1]-1];
-			var d = post_date[2].split(" ")[0];
-
-			if (d.charAt(0) === "0")
-				d = d.substring(1);
-			$( this ).text(mo + " " + d + ", " + yr);
+    	var i = 0;
+    	$('.post').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white');
+		  }
+		  else {
+		  	$(this).addClass('grey');
+		  }
+		  i++;
 		});
+
+    	var i = 0;
+    	$('.listing').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white_compact');
+		  }
+		  else {
+		  	$(this).addClass('grey_compact');
+		  }
+		  i++;
+		});
+
+    	function post_date_formatter() {
+			var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var post_dates = $(".post_date");
+
+			post_dates.each(function( index ) {
+				var post_date = $( this ).text().split("-")
+			  	var yr = post_date[0];
+				var mo = post_date[1];
+				var d = post_date[2].split(" ")[0];
+
+				if (d.charAt(0) === "0")
+					d = d.substring(1);
+
+				if (window.innerWidth < 768) {
+					$( this ).text(mo + "/" + d + "/" + yr.substring(2));
+				}
+				else {
+					$( this ).text(months[mo-1] + " " + d + ", " + yr);
+				}
+			});
+
+		}
+
+		$( window ).resize(post_date_formatter());
+		
 	</script>
   </body>
 </html>

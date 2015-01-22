@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10,6 +10,9 @@
       ga('create', 'UA-47862393-1', 'auto');
       ga('send', 'pageview');
 
+      if (document.referrer == "http://chris.ward.is/" or document.referrer == "http://pcward.tumblr.com") {
+        $('.overlay').toggle();
+      }
     </script>
 
     <meta charset="utf-8">
@@ -57,17 +60,19 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/index.html">Home</a></li>
             <li><a href="http://www.linkedin.com/in/pcward">Resume</a></li>
+            <li><a href="/contact.html">About</a></li>
             <li><a href="/blog.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
             <li><a href="https://twitter.com/pcward">Twitter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+    <div class="overlay">Hey! Just a heads up I've moved to pcward.github.io!</div>
 
 
-<div id="white">
+
+<div class="post">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-1">
@@ -78,20 +83,12 @@
 <p>(Correlation: 0.60)</p>
 <p><a href="http://tylervigen.com/view_correlation?id=6036" target="_blank">Link</a>.</p>
 
-				<!--<p><a href="/2014/10/13/i-told-you-so.html">Continue Reading...</a></p>-->
-			</div>
-		</div><!-- /row -->
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-1">
-				
-					<b><a href="/page2" class="next">Older ></a></b>
-				
 			</div>
 		</div><!-- /row -->
     </div> <!-- /container -->
-</div><!-- /white -->
+</div>
 
-<div id="white">
+<div class="post">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-1">
@@ -102,20 +99,12 @@
 <p>Looks like I&#8217;ve been slacking on the bike so far this week, compared to last week! This week&#8217;s data is the darker colored stuff, last week&#8217;s data is the lighter colored stuff.</p>
 <p>I pulled the data from my <a href="http://cyclinganalytics.com" target="_blank">Cycling Analytics</a> account using their <a href="http://www.cyclinganalytics.com/developer/api" target="_blank">API</a>. I then massaged it with a Python script I wrote to augment some of the charting I felt was missing in the Cycling Analytics dashboard (I know this stuff is available out of the box from TrainingPeaks, but 1) it was fun to program the API myself, and 2) I refuse to pay for TrainingPeaks).</p>
 
-				<!--<p><a href="/2014/09/03/looking-at-data-my-cycling-training-data.html">Continue Reading...</a></p>-->
-			</div>
-		</div><!-- /row -->
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-1">
-				
-					<b><a href="/page2" class="next">Older ></a></b>
-				
 			</div>
 		</div><!-- /row -->
     </div> <!-- /container -->
-</div><!-- /white -->
+</div>
 
-<div id="white">
+<div class="post">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-1">
@@ -147,9 +136,14 @@
 <p>It&#8217;s interesting to note that the spread in time by the end of the race (stage 7) is quite large. The rider with the cumulatively slowest time was over 1.5 hours behind the overall winner, Tom Danielson. Perhaps its due to a particularly poor showing in stages 4, 6, and 7? If you look at the box and whisker plot of time spread, you&#8217;ll notice that those stages have large spreads in times. Stage 4, from Ogden to Powder Mountain, was a pretty hilly stage, with a nasty climb to the mountain top finish. Stage 6, from Salt Lake City to Snowbird, was also a grueling stage, with over 12,000 ft of elevation gain, and Stage 7, although a little shorter, featured two really hard climbs at Wolf Creek Pass and Empire Pass. The common denominator, besides the endless vertical racked up over the course of the stages, was the high altitude. Most of the mountain finishes, and the hard climbs, took place above 8000 feet in elevation. I bet a lot of riders weren&#8217;t used to that&#8230;</p>
 <p>All that climbing is probably also why you see attrition increasing throughout the race, especially after stages 5 and 6. There was a 7% dropoff in the number of riders starting stage 7 compared to stage 6!</p>
 
-				<!--<p><a href="/2014/08/22/looking-at-data-2014-tour-of-utah.html">Continue Reading...</a></p>-->
 			</div>
 		</div><!-- /row -->
+    </div> <!-- /container -->
+</div>
+
+
+<div class="grey">
+    <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-1">
 				
@@ -158,8 +152,7 @@
 			</div>
 		</div><!-- /row -->
     </div> <!-- /container -->
-</div><!-- /white -->
-
+</div>
 
 
 	<!-- +++++ Footer Section +++++ -->
@@ -198,19 +191,54 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var post_dates = $(".post_date");
 
-		post_dates.each(function( index ) {
-			var post_date = $( this ).text().split("-")
-		  	var yr = post_date[0];
-			var mo = months[post_date[1]-1];
-			var d = post_date[2].split(" ")[0];
-
-			if (d.charAt(0) === "0")
-				d = d.substring(1);
-			$( this ).text(mo + " " + d + ", " + yr);
+    	var i = 0;
+    	$('.post').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white');
+		  }
+		  else {
+		  	$(this).addClass('grey');
+		  }
+		  i++;
 		});
+
+    	var i = 0;
+    	$('.listing').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white_compact');
+		  }
+		  else {
+		  	$(this).addClass('grey_compact');
+		  }
+		  i++;
+		});
+
+    	function post_date_formatter() {
+			var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var post_dates = $(".post_date");
+
+			post_dates.each(function( index ) {
+				var post_date = $( this ).text().split("-")
+			  	var yr = post_date[0];
+				var mo = post_date[1];
+				var d = post_date[2].split(" ")[0];
+
+				if (d.charAt(0) === "0")
+					d = d.substring(1);
+
+				if (window.innerWidth < 768) {
+					$( this ).text(mo + "/" + d + "/" + yr.substring(2));
+				}
+				else {
+					$( this ).text(months[mo-1] + " " + d + ", " + yr);
+				}
+			});
+
+		}
+
+		$( window ).resize(post_date_formatter());
+		
 	</script>
   </body>
 </html>

@@ -1,19 +1,30 @@
 {% include header.html %}
 
-<div id="white">
+<div class="white">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>{{ page.title }}</h4>
-				<h5>{{ page.date }}</h5>
+				<h5 class="post_date">{{ page.date }}</h5>
 				{{ page.content }}
-				<p><a href="{{ page.previous }}">< Previous</a> | <a href="{{ page.next }}">Next ></a></p>
+				
 			</div>
 
 		</div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /white -->
 
-	
+<div class="grey">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<b><a href="{{ page.previous.url }}">< Previous</a></b> | <b><a href="{{ page.next.url }}">Next ></a></b>
+			</div>
+
+		</div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /white -->
+
+
 	
 {% include footer.html %}

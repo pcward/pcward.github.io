@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10,6 +10,9 @@
       ga('create', 'UA-47862393-1', 'auto');
       ga('send', 'pageview');
 
+      if (document.referrer == "http://chris.ward.is/" or document.referrer == "http://pcward.tumblr.com") {
+        $('.overlay').toggle();
+      }
     </script>
 
     <meta charset="utf-8">
@@ -57,21 +60,23 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/index.html">Home</a></li>
             <li><a href="http://www.linkedin.com/in/pcward">Resume</a></li>
+            <li><a href="/contact.html">About</a></li>
             <li><a href="/blog.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
             <li><a href="https://twitter.com/pcward">Twitter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+    <div class="overlay">Hey! Just a heads up I've moved to pcward.github.io!</div>
 
-<div id="white">
+
+<div class="white">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>On "Small Data:" The Necessity of Qualitative Research in the Age of Big Data</h4>
-				<h5>2013-09-09 11:21:53 -0600</h5>
+				<h5 class="post_date">2013-09-09 11:21:53 -0600</h5>
 				<p><span>I came across <a href="https://medium.com/design-ux/bca4159e9620" target="_blank">a post on Medium</a> that brilliantly makes the case for qualitative research: the point many of us seem to have forgotten as we deal with &#8220;bigger and bigger&#8221; data is that there are many things we can&#8217;t reliably stick numbers on.</span></p>
 <p>We&#8217;re increasingly living in a quantifiable world—if you look around you&#8217;ll notice we&#8217;re attempting to quantify learning in our schools (No Child Left Behind), our health (<a href="http://en.wikipedia.org/wiki/Quantified_Self" target="_blank">see: quantified self</a>), even something as un-quantifiable as love (eHarmony&#8217;s &#8220;29 Dimensions of Compatibility&#8221;). </p>
 <p><span>At work, we try to quantify our contributions in terms of dollars added to the bottom line (as a side note, how do you even do that if you are, say, a BI report monkey, producing something that isn&#8217;t inherently and directly revenue-generating?).</span></p>
@@ -88,14 +93,25 @@
 <p><span>I&#8217;ve been rambling on for a while. Let me sum up the argument like so:</span></p>
 <p>Talking to real users provides context. Without context, your numbers are just numbers: they contain no meaning on their own. Quantitative analysis and qualitative analysis go hand-in-hand if you want to maximize your return on user research. </p>
 
-				<p><a href="{"layout"=>"post", "title"=>"Parking tickets and probability", "date"=>2013-08-28 15:51:00 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/59618835651/parking-tickets-and-probability", "url"=>"/2013/08/28/parking-tickets-and-probability.html", "dir"=>"/2013/08/28", "id"=>"/2013/08/28/parking-tickets-and-probability", "categories"=>[], "next"=><Post: /2013/09/09/on-small-data-the-necessity-of-qualitative>, "previous"=><Post: /2013/08/19/data-scientists-and-statisticians-cant-we-all>, "path"=>"_posts/2013-08-28-parking-tickets-and-probability.html", "content"=>"<p><strong>What is the chance to get a parking ticket in half an hour if the chance to get a ticket is 80% in 1 hour?</strong></p>\n<p><a href=\"http://math.stackexchange.com/questions/153607/what-is-the-chance-to-get-a-parking-ticket-in-half-an-hour-if-the-chance-to-get\" target=\"_blank\">http://math.stackexchange.com/questions/153607/what-is-the-chance-to-get-a-parking-ticket-in-half-an-hour-if-the-chance-to-get</a></p>\n", "excerpt"=>"<p><strong>What is the chance to get a parking ticket in half an hour if the chance to get a ticket is 80% in 1 hour?</strong></p>\n<p><a href=\"http://math.stackexchange.com/questions/153607/what-is-the-chance-to-get-a-parking-ticket-in-half-an-hour-if-the-chance-to-get\" target=\"_blank\">http://math.stackexchange.com/questions/153607/what-is-the-chance-to-get-a-parking-ticket-in-half-an-hour-if-the-chance-to-get</a></p>\n\n\n"}">< Previous</a> | <a href="{"layout"=>"post", "title"=>"Teens aren't abandoning Facebook", "date"=>2014-01-02 13:54:39 -0700, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/71998661156/teens-arent-abandoning-facebook", "url"=>"/2014/01/02/teens-arent-abandoning-facebook.html", "dir"=>"/2014/01/02", "id"=>"/2014/01/02/teens-arent-abandoning-facebook", "categories"=>[], "next"=><Post: /2014/02/06/looking-at-data-hospital-costs>, "previous"=><Post: /2013/09/09/on-small-data-the-necessity-of-qualitative>, "path"=>"_posts/2014-01-02-teens-arent-abandoning-facebook.html", "content"=>"<p>A lot of angst in AdLand lately over a Piper Jaffray study claiming teens are leaving social in droves. Twitter, for example digs up these gems:</p>\n<p><a class=\"twitter-timeline\" href=\"https://twitter.com/search?q=Teens+abandoning+Facebook\" data-widget-id=\"418845911125463040\" target=\"_blank\">Tweets about &#8220;Teens abandoning Facebook&#8221;</a></p>\n<p><a href=\"https://medium.com/understandings-epiphanies/aae8d5f880cc\" target=\"_blank\">Cliff Watson over on Medium, thankfully cuts through all the hyperventilating</a>:</p>\n<blockquote>\n<p>\"The Number One Reason Kids Don’t Need Facebook? They Literally Don’t Need Facebook.\"</p>\n</blockquote>\n<p>Not to be flippant, that&#8217;s not the only reason, but it sure sums up his reasoning nicely.</p>\n<p>Social never had a good ROI, and I think people (finally) are starting to realize this. All we&#8217;re seeing is social maturing. </p>\n<p>Calm the f*down.</p>\n<script type=\"text/javascript\">// <![CDATA[\n!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");\n// ]]></script>\n", "excerpt"=>"<p>A lot of angst in AdLand lately over a Piper Jaffray study claiming teens are leaving social in droves. Twitter, for example digs up these gems:</p>\n<p><a class=\"twitter-timeline\" href=\"https://twitter.com/search?q=Teens+abandoning+Facebook\" data-widget-id=\"418845911125463040\" target=\"_blank\">Tweets about &#8220;Teens abandoning Facebook&#8221;</a></p>\n<p><a href=\"https://medium.com/understandings-epiphanies/aae8d5f880cc\" target=\"_blank\">Cliff Watson over on Medium, thankfully cuts through all the hyperventilating</a>:</p>\n<blockquote>\n<p>\"The Number One Reason Kids Don’t Need Facebook? They Literally Don’t Need Facebook.\"</p>\n</blockquote>\n<p>Not to be flippant, that&#8217;s not the only reason, but it sure sums up his reasoning nicely.</p>\n<p>Social never had a good ROI, and I think people (finally) are starting to realize this. All we&#8217;re seeing is social maturing. </p>\n<p>Calm the f*down.</p>\n<script type=\"text/javascript\">// <![CDATA[\n!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\"://platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");\n// ]]></script>\n\n\n"}">Next ></a></p>
+				
 			</div>
 
 		</div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /white -->
 
-	
+<div class="grey">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<b><a href="/2013/08/28/parking-tickets-and-probability.html">< Previous</a></b> | <b><a href="/2014/01/02/teens-arent-abandoning-facebook.html">Next ></a></b>
+			</div>
+
+		</div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /white -->
+
+
 	
 
 	<!-- +++++ Footer Section +++++ -->
@@ -134,19 +150,54 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var post_dates = $(".post_date");
 
-		post_dates.each(function( index ) {
-			var post_date = $( this ).text().split("-")
-		  	var yr = post_date[0];
-			var mo = months[post_date[1]-1];
-			var d = post_date[2].split(" ")[0];
-
-			if (d.charAt(0) === "0")
-				d = d.substring(1);
-			$( this ).text(mo + " " + d + ", " + yr);
+    	var i = 0;
+    	$('.post').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white');
+		  }
+		  else {
+		  	$(this).addClass('grey');
+		  }
+		  i++;
 		});
+
+    	var i = 0;
+    	$('.listing').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white_compact');
+		  }
+		  else {
+		  	$(this).addClass('grey_compact');
+		  }
+		  i++;
+		});
+
+    	function post_date_formatter() {
+			var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var post_dates = $(".post_date");
+
+			post_dates.each(function( index ) {
+				var post_date = $( this ).text().split("-")
+			  	var yr = post_date[0];
+				var mo = post_date[1];
+				var d = post_date[2].split(" ")[0];
+
+				if (d.charAt(0) === "0")
+					d = d.substring(1);
+
+				if (window.innerWidth < 768) {
+					$( this ).text(mo + "/" + d + "/" + yr.substring(2));
+				}
+				else {
+					$( this ).text(months[mo-1] + " " + d + ", " + yr);
+				}
+			});
+
+		}
+
+		$( window ).resize(post_date_formatter());
+		
 	</script>
   </body>
 </html>

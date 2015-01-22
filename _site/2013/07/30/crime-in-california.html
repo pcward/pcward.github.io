@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10,6 +10,9 @@
       ga('create', 'UA-47862393-1', 'auto');
       ga('send', 'pageview');
 
+      if (document.referrer == "http://chris.ward.is/" or document.referrer == "http://pcward.tumblr.com") {
+        $('.overlay').toggle();
+      }
     </script>
 
     <meta charset="utf-8">
@@ -57,32 +60,45 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/index.html">Home</a></li>
             <li><a href="http://www.linkedin.com/in/pcward">Resume</a></li>
+            <li><a href="/contact.html">About</a></li>
             <li><a href="/blog.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
             <li><a href="https://twitter.com/pcward">Twitter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+    <div class="overlay">Hey! Just a heads up I've moved to pcward.github.io!</div>
 
-<div id="white">
+
+<div class="white">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>Crime in California</h4>
-				<h5>2013-07-30 07:46:00 -0600</h5>
+				<h5 class="post_date">2013-07-30 07:46:00 -0600</h5>
 				<p>I&#8217;ve been working with our content people lately on using Tableau to visualize relevant content for our websites. This map and data table of burglaries in California in 2011 is part of a series of Tableau dashboards I created for <a href="http://www.safewise.com" target="_blank">Safewise.com</a> and hosted on <a href="http://public.tableausoftware.com/profile/clearlink" target="_blank">Tableau Public</a>.</p>
 <div><iframe frameborder="no" height="1070" marginheight="0" marginwidth="0" scrolling="yes" src="http://public.tableausoftware.com/views/CrimeintheUS_0/CAdash?:embed=y&amp;:display_count=no" width="804"> </iframe></div>
 
-				<p><a href="{"layout"=>"post", "title"=>"Tableau 8.0 is awesome", "date"=>2013-04-20 12:55:19 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/48457556385/tableau-8-0-is-awesome", "url"=>"/2013/04/20/tableau-8-0-is-awesome.html", "dir"=>"/2013/04/20", "id"=>"/2013/04/20/tableau-8-0-is-awesome", "categories"=>[], "next"=><Post: /2013/07/30/crime-in-california>, "previous"=><Post: /2013/03/24/ad-privacy-controls>, "path"=>"_posts/2013-04-20-tableau-8-0-is-awesome.html", "content"=>"<p>After setting up our in-house analytics in Tableau 7, let me tell you how intuitive Tableau 8 has made the back-end work. </p>\n<p>Our main dashboards used to rely on this ugly mess of a master MySQL table to drive everything; When I say mess, I mean it. The table consisted of several blocks of information, each of which should have been its own SQL table. But Tableau 7&#8217;s data blending left a lot to be desired, so here we were. </p>\n<p><span>The result was slow rendering and not very flexible reporting. We were pretty limited to providing WYSIWYG reporting to our end-users, not letting them harness the power of Tableau at all.</span></p>\n<p>Tableau 8 changed all that, making linking various data sources on the fly in Desktop a breeze. Now we are able to have a properly normalized SQL structure, each piece of information in its logical place. Additionally, we can now give end-users the power to choose how and what they want to look at.</p>\n<p>So far, the only drawback I can see in Tableau 8, is we still cannot use Measure Names as a global filter. Bummer. </p>\n<p>But if you&#8217;re on 7, and on the fence, do yourself a favor and migrate. Our server migration took 20 minutes, and nothing broke on the back end. </p>\n<p><em>Thank you, Tableau!</em></p>\n", "excerpt"=>"<p>After setting up our in-house analytics in Tableau 7, let me tell you how intuitive Tableau 8 has made the back-end work. </p>\n<p>Our main dashboards used to rely on this ugly mess of a master MySQL table to drive everything; When I say mess, I mean it. The table consisted of several blocks of information, each of which should have been its own SQL table. But Tableau 7&#8217;s data blending left a lot to be desired, so here we were. </p>\n<p><span>The result was slow rendering and not very flexible reporting. We were pretty limited to providing WYSIWYG reporting to our end-users, not letting them harness the power of Tableau at all.</span></p>\n<p>Tableau 8 changed all that, making linking various data sources on the fly in Desktop a breeze. Now we are able to have a properly normalized SQL structure, each piece of information in its logical place. Additionally, we can now give end-users the power to choose how and what they want to look at.</p>\n<p>So far, the only drawback I can see in Tableau 8, is we still cannot use Measure Names as a global filter. Bummer. </p>\n<p>But if you&#8217;re on 7, and on the fence, do yourself a favor and migrate. Our server migration took 20 minutes, and nothing broke on the back end. </p>\n<p><em>Thank you, Tableau!</em></p>\n\n\n"}">< Previous</a> | <a href="{"layout"=>"post", "title"=>"Anchoring and the power of persuasion", "date"=>2013-08-16 11:21:23 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/58432412702/anchoring-and-the-power-of-persuasion", "url"=>"/2013/08/16/anchoring-and-the-power-of-persuasion.html", "dir"=>"/2013/08/16", "id"=>"/2013/08/16/anchoring-and-the-power-of-persuasion", "categories"=>[], "next"=><Post: /2013/08/19/data-scientists-and-statisticians-cant-we-all>, "previous"=><Post: /2013/07/30/crime-in-california>, "path"=>"_posts/2013-08-16-anchoring-and-the-power-of-persuasion.html", "content"=>"<p>Dan Ariely would be proud of an A/B test we did on one of our sites recently. The site sells bundles in the TV service market, and the test consisted of showing visitors either a baseline price of $X (for the low-tier bundle) or a higher price $Y (for the next tier bundle).</p>\n\n<p>Conventional wisdom in Marketing tells you that the baseline, cheaper, price should drive more sales. Frankly, our CMO laughed us out of the room for even running this test; He was so convinced this was a no-brainer in favor of the lower price point that he didn&#8217;t see any reason to waste time even testing this.</p>\n\n<p>Nonetheless, we decided to go ahead and test this anyway. Our hunch was that the price we show our visitors acts as an anchor.</p>\n\n<p>The anchoring effect has been widely described elsewhere (1-4), so I won&#8217;t go into too many details. What it boils down to is this: someone suggests a number, any number really, and then gives you another number to consider. You can&#8217;t help but base your opinion of the second number on the first. Mint describes how this work with iPads (1): &#8220;We could be selling this iPad for $999, but we&#8217;re not. You can have a shiny new iPad for only $499!&#8221; makes the $499 price tag seem like quite the deal! David McRaney talks about anchoring in the context of selling leather jackets (3).</p>\n\n<p>We wanted to test the effect of displaying a higher price to our visitors, and compare sales conversion to conversion with a lower-number anchor. Even though we would probably see a net drop in calls to our call center, we were banking on the anchoring effect of the high price to make up, or even supersede this drop in call conversion.</p>\n\n<p>Here&#8217;s a hypothetical conversation between a caller that saw the higher price point online and one of our sales agents:</p>\n\n<blockquote>\n<p><strong>Caller:</strong> I&#8217;m interested in signing up for your Awesome Bundle! I saw it&#8217;s advertised on your website for $X a month.</p>\n\n<p><strong>Agent:</strong> Glad to take your order!</p>\n\n<p><strong>Caller:</strong> I was shopping around, and I think the price is a little high compared to some other packages I saw. </p>\n\n<p><strong>Agent:</strong> No worries. Let me see what I can do for you… Hey! It looks like we have a special deal going on right now! If you sign up for our Awesome Lite Bundle you&#8217;ll save $10 a month! </p>\n\n<p><strong>Caller:</strong> Really?! That&#8217;s great! So Awesome Lite is $(X-10) a month, correct?</p>\n\n<p><strong>Agent:</strong> Yup.</p>\n\n<p><strong>Caller:</strong> What&#8217;s the difference between those packages, anyway?</p>\n\n<p><strong>Agent:</strong> (goes on to explain the rather arbitrary differences)</p>\n\n<p><strong>Caller:</strong> Sign me up!</p>\n\n</blockquote>\n<p></p>\n\n<p>The higher price we showed on our site acted as an anchor. We planed a seed in your mind suggesting that our products cost something like $X.</p>\n\n<p>By the power of suggestion, all our product bundles were now judged against this price anchor. The higher priced packages all of a sudden seemed more reasonably priced, and the lower priced bundles came across as a steal.</p>\n\n<p>The higher price anchor effectively gave our sales agent an extra card in their pocket. Indeed, this is what we experienced.</p>\n\n<p>Not only did we learn that people were less price sensitive that we thought—the drop in call volume was negligible. We also learned that displaying a higher price point on our site lead people to couch the rest of our bundles in a more favorable light. As Ariely et. al. writes:</p>\n\n<blockquote>\n<p>\"In sum, changes or differences in prices…will have a much greater impact on behavior when people are made aware of the change or difference than when they are only aware of the prevailing levels at a particular point in time.\" (1)</p>\n</blockquote>\n\n<p>Yes, we lost a few calls overall. But when looking at the data, there was no statistical difference between call volume in the low-price variation and call volume in the high-price variation.</p>\n\n<p>But we saw a MAJOR lift in sales conversion when comparing the high-price anchor to the baseline. </p>\n\n<p><img alt=\"image\" src=\"http://media.tumblr.com/2509020f412e5d28845ced84bbc8f330/tumblr_inline_mrmw0rEQnQ1qz4rgp.png\"/></p>\n\n<p><strong>Call center activity over time:</strong> <em>As you can see, the higher price anchor pretty consistently received a lower call volume. What the graph doesn&#8217;t tell you is that the overall loss was no more than 2-3%.</em></p>\n<p><img alt=\"image\" src=\"http://media.tumblr.com/3b7b809f355b99e21c37111a01a151da/tumblr_inline_mrmw2itW8Q1qz4rgp.png\"/></p>\n\n<p><strong>Sales conversion over time:</strong> <em>However, the higher anchor consistently showed a much higher sales conversion rate.</em></p>\n<p>Walking into our CMO&#8217;s office the other day with the results of this test was comical. His eyes bulged out and his face went slightly pale when we told him what had happened in this experiment.</p>\n\n<p>Needless to say, we implemented the higher price point permanently. Thanks, Dan Ariely!</p>\n\n<p></p>\n<p><em>References:</em></p>\n\n<p>(1) Amster-Burton, M. Price Anchoring, Or Why a $499 iPad Seems Inexpensive. <a href=\"http://www.mint.com/blog/how-to/price-anchoring/\" target=\"_blank\">http://www.mint.com/blog/how-to/price-anchoring/</a> (accessed Aug. 15, 2013).</p>\n\n<p>(2) Ariely, Loewenstein, and Prelec, &#8220;Coherent Arbitrariness&#8221;: Stable Demand Curves without Stable Preferences. Quarterly Journal of Economics, Feb. 2003.</p>\n\n<p>(3) McRaney, D. Anchoring Effect. <a href=\"http://youarenotsosmart.com/2010/07/27/anchoring-effect/\" target=\"_blank\">http://youarenotsosmart.com/2010/07/27/anchoring-effect/</a> (accessed Aug. 15, 2013).</p>\n\n<p>(4) Tversky, A. and Kahneman , D. Judgement Under Uncertainty: Heuristics and Biases. Science, Sept. 1974.</p>\n", "excerpt"=>"<p>Dan Ariely would be proud of an A/B test we did on one of our sites recently. The site sells bundles in the TV service market, and the test consisted of showing visitors either a baseline price of $X (for the low-tier bundle) or a higher price $Y (for the next tier bundle).</p>\n\n"}">Next ></a></p>
+				
 			</div>
 
 		</div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /white -->
 
-	
+<div class="grey">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<b><a href="/2013/04/20/tableau-8-0-is-awesome.html">< Previous</a></b> | <b><a href="/2013/08/16/anchoring-and-the-power-of-persuasion.html">Next ></a></b>
+			</div>
+
+		</div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /white -->
+
+
 	
 
 	<!-- +++++ Footer Section +++++ -->
@@ -121,19 +137,54 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var post_dates = $(".post_date");
 
-		post_dates.each(function( index ) {
-			var post_date = $( this ).text().split("-")
-		  	var yr = post_date[0];
-			var mo = months[post_date[1]-1];
-			var d = post_date[2].split(" ")[0];
-
-			if (d.charAt(0) === "0")
-				d = d.substring(1);
-			$( this ).text(mo + " " + d + ", " + yr);
+    	var i = 0;
+    	$('.post').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white');
+		  }
+		  else {
+		  	$(this).addClass('grey');
+		  }
+		  i++;
 		});
+
+    	var i = 0;
+    	$('.listing').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white_compact');
+		  }
+		  else {
+		  	$(this).addClass('grey_compact');
+		  }
+		  i++;
+		});
+
+    	function post_date_formatter() {
+			var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var post_dates = $(".post_date");
+
+			post_dates.each(function( index ) {
+				var post_date = $( this ).text().split("-")
+			  	var yr = post_date[0];
+				var mo = post_date[1];
+				var d = post_date[2].split(" ")[0];
+
+				if (d.charAt(0) === "0")
+					d = d.substring(1);
+
+				if (window.innerWidth < 768) {
+					$( this ).text(mo + "/" + d + "/" + yr.substring(2));
+				}
+				else {
+					$( this ).text(months[mo-1] + " " + d + ", " + yr);
+				}
+			});
+
+		}
+
+		$( window ).resize(post_date_formatter());
+		
 	</script>
   </body>
 </html>

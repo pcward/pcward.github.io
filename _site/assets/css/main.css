@@ -50,7 +50,8 @@ p {
 
 /* Links */
 a {
-    color: #1abc9c;
+    /*color: #1abc9c;*/
+    color: #06ace3;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -173,18 +174,29 @@ a:after {
 
 /* +++++ Color Wraps / Blog Page +++++ */
 
-#grey {
+.grey {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: #f2f2f2;
 }
 
-#white {
+.white {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: #ffffff;
 }
 
+.grey_compact {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #f2f2f2;
+}
+
+.white_compact {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #ffffff;
+}
 
 
 /* Blog Date*/
@@ -210,6 +222,22 @@ ba {
 /* Blog Tags */
 bt {
 	font-size: 12px;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	z-index: 1000;
+	background-color: rgba(6,172,227,0.9);
+	border-color: #26596A;
+	padding-top: 15px;
+	padding-left: 50px;
+	color: #ffffff;
+	font-weight: 700;
+	display: none;
 }
 
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */

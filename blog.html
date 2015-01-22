@@ -5,19 +5,18 @@ title: Archive
 {% include header.html %}
 
 
-<div id="white">
+<div class="white">
     <div class="container">
 		<div class="row">
 			<div class="col-md-8 col-lg-offset-1">
 				<h3>Blog Archive</h3>
 				{% for post in site.posts %}
-				<div class="row"><span class="post_date col-xs-3">{{ post.date }}</span> <b><span class="col-xs-9"><a href="{{ post.url }}">{{ post.title }}</a></span></b></div>
+				<div class="row listing"><span class="post_date col-xs-3">{{ post.date }}</span> <b><span class="col-xs-9"><a href="{{ post.url }}">{{ post.title }}</a></span></b></div>
 				{% endfor %}
 			</div>
-
 		</div><!-- /row -->
     </div> <!-- /container -->
-</div><!-- /white -->
+</div>
 
 
 {% include footer.html %}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -10,6 +10,9 @@
       ga('create', 'UA-47862393-1', 'auto');
       ga('send', 'pageview');
 
+      if (document.referrer == "http://chris.ward.is/" or document.referrer == "http://pcward.tumblr.com") {
+        $('.overlay').toggle();
+      }
     </script>
 
     <meta charset="utf-8">
@@ -57,21 +60,23 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/index.html">Home</a></li>
             <li><a href="http://www.linkedin.com/in/pcward">Resume</a></li>
+            <li><a href="/contact.html">About</a></li>
             <li><a href="/blog.html">Archive</a></li>
-            <li><a href="/contact.html">Contact</a></li>
             <li><a href="https://twitter.com/pcward">Twitter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+    <div class="overlay">Hey! Just a heads up I've moved to pcward.github.io!</div>
 
-<div id="white">
+
+<div class="white">
     <div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>Takeaways from Optimizely's 2014 Opticon</h4>
-				<h5>2014-04-22 14:29:00 -0600</h5>
+				<h5 class="post_date">2014-04-22 14:29:00 -0600</h5>
 				<p>Last week I had the honor of flying out to San Francisco for Optimizely&#8217;s first Opticon conference to represent CLEARLINK.</p>
 <p><img alt="image" src="http://photos-e.ak.instagram.com/hphotos-ak-prn/1515890_1416598545269396_1235856819_n.jpg" width="400"/></p>
 <p>I wanted to soak up all the knowledge and wisdom from the source itself. As a direct response marketing company, we&#8217;re continually trying to understand our customers and what makes them tick, so testing and optimization, continuing to deliver an improved and more compelling marketing message on behalf of our brand partners.</p>
@@ -100,14 +105,25 @@
 </ol><h3>3. Experimentation never ends: iterate!</h3>
 <p>Take the learnings from your last experiment and always try to improve on them. For example, Alissa Polucha from Microsoft Store shared the example of how the MS Office page on microsoft.com has gone through six iterations of testing so far, just to get where they are today</p>
 
-				<p><a href="{"layout"=>"post", "title"=>"#OptiCon2014", "date"=>2014-04-20 00:14:00 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/83279307000/opticon2014", "url"=>"/2014/04/20/opticon2014.html", "dir"=>"/2014/04/20", "id"=>"/2014/04/20/opticon2014", "categories"=>[], "next"=><Post: /2014/04/22/takeaways-from-optimizelys-2014-opticon>, "previous"=><Post: /2014/03/27/looking-at-data-2013-tour-de-france>, "path"=>"_posts/2014-04-20-opticon2014.html", "content"=>"<p>My mind is blown; the amount of talent and creativity and amazing talks at <a href=\"http://optimizely.com\" target=\"_blank\">Optimizely&#8217;s</a> inaugural <a href=\"http://opticon.optimizely.com\" target=\"_blank\">user conference</a> was staggering. I&#8217;ll be posting pics and ruminations later, but before I go I want to point out that <a href=\"http://clearlink.com\" target=\"_blank\">CLEARLINK</a> (i.e. Rachel Johnson and I) won an Optie Award for Best Advanced Feature Use!</p>\n<p><img alt=\"image\" src=\"https://31.media.tumblr.com/4612b0cf4378a67f44603cb6930b37cf/tumblr_inline_n4bg85T8cw1ql2b9o.png\"/></p>\n", "excerpt"=>"<p>My mind is blown; the amount of talent and creativity and amazing talks at <a href=\"http://optimizely.com\" target=\"_blank\">Optimizely&#8217;s</a> inaugural <a href=\"http://opticon.optimizely.com\" target=\"_blank\">user conference</a> was staggering. I&#8217;ll be posting pics and ruminations later, but before I go I want to point out that <a href=\"http://clearlink.com\" target=\"_blank\">CLEARLINK</a> (i.e. Rachel Johnson and I) won an Optie Award for Best Advanced Feature Use!</p>\n<p><img alt=\"image\" src=\"https://31.media.tumblr.com/4612b0cf4378a67f44603cb6930b37cf/tumblr_inline_n4bg85T8cw1ql2b9o.png\"/></p>\n\n\n"}">< Previous</a> | <a href="{"layout"=>"post", "title"=>"Looking at Data: 2007 NSF research expenditures and research outcomes", "date"=>2014-04-30 13:33:00 -0600, "tags"=>[], "tumblr_url"=>"http://chris.ward.is/post/84344680513/looking-at-data-2007-nsf-research-expenditures", "url"=>"/2014/04/30/looking-at-data-2007-nsf-research-expenditures.html", "dir"=>"/2014/04/30", "id"=>"/2014/04/30/looking-at-data-2007-nsf-research-expenditures", "categories"=>[], "next"=><Post: /2014/08/22/looking-at-data-2014-tour-of-utah>, "previous"=><Post: /2014/04/22/takeaways-from-optimizelys-2014-opticon>, "path"=>"_posts/2014-04-30-looking-at-data-2007-nsf-research-expenditures.html", "content"=>"<p>In this week&#8217;s installment of Looking at Data, we&#8217;re digging into data from the National Science Foundation and NASA. The data can be found at <a href=\"http://www.research.gov/research-portal/appmanager/base/desktop?_nfpb=true&amp;_eventName=viewQuickSearchFormEvent_so_rsr\" target=\"_blank\">Research.gov</a>, and covers research grants from the NSF and NASA from 2007, and how these grants fared in terms of publications and conference proceedings. They have data all the way up until FY 2013, but I chose 2007 because research takes time, and well, I wanted to have as much data as possible on research outcomes (in this case publications and conference proceedings).</p>\n<p>The question I wanted to look at this week is whether &#8220;scrappiness is the Mother of invention.&#8221; This came up in a conversation I had with my friend <a href=\"https://twitter.com/DaveyDeMille\" target=\"_blank\">@DaveyDeMille</a> over lunch last week. In other words, is being well-funded correlated with a higher research quality, as measured by the proportion of NSF grants that lead to a publication.</p>\n<p>First off, just some descriptive stats:</p>\n<p>\n<script src=\"http://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"745\" width=\"654\"><param name=\"host_url\" value=\"http%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"path\" value=\"shared/RPT2WQT38\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"http://public.tableausoftware.com/static/images/RP/RPT2WQT38/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"><param name=\"showTabs\" value=\"n\"></object></div>\n<div></div>\n<p>Now moving onto our question:</p>\n<p>\n<script src=\"http://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"815\" width=\"544\"><param name=\"host_url\" value=\"http%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"path\" value=\"shared/6GKKT2KZR\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"http://public.tableausoftware.com/static/images/6G/6GKKT2KZR/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"><param name=\"showTabs\" value=\"n\"></object></div>\n<p>\n<script src=\"http://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"815\" width=\"544\"><param name=\"host_url\" value=\"http%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"path\" value=\"shared/Q6PPSWGMB\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"http://public.tableausoftware.com/static/images/Q6/Q6PPSWGMB/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"><param name=\"showTabs\" value=\"n\"></object></div>\n<p>\n<script src=\"http://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"595\" width=\"544\"><param name=\"host_url\" value=\"http%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"path\" value=\"shared/69MB48BM6\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"http://public.tableausoftware.com/static/images/69/69MB48BM6/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"><param name=\"showTabs\" value=\"n\"></object></div>\n<div></div>\n<p>So although this is pretty cursory, it appears that there&#8217;s not really a relationship between getting lots of NSF funding and lots of publication-yielding projects. I&#8217;d say, without digging more into this, that scrappiness is, if not the Mother, of invention, at least the aunt.</p>\n<p>EDIT: I&#8217;ve been reading up on UX lately, following <a href=\"http://52weeksofux.com/\" target=\"_blank\">52 Week of UX</a> (awesome resource, by the way), and came to Week 4 today. They have an excellent post on how constraints force creativity: go read it here: <a href=\"http://52weeksofux.com/post/358515571/constraints-fuel-creativity\" target=\"_blank\">Constraints Fuel Creativity</a>.</p>\n", "excerpt"=>"<p>In this week&#8217;s installment of Looking at Data, we&#8217;re digging into data from the National Science Foundation and NASA. The data can be found at <a href=\"http://www.research.gov/research-portal/appmanager/base/desktop?_nfpb=true&amp;_eventName=viewQuickSearchFormEvent_so_rsr\" target=\"_blank\">Research.gov</a>, and covers research grants from the NSF and NASA from 2007, and how these grants fared in terms of publications and conference proceedings. They have data all the way up until FY 2013, but I chose 2007 because research takes time, and well, I wanted to have as much data as possible on research outcomes (in this case publications and conference proceedings).</p>\n<p>The question I wanted to look at this week is whether &#8220;scrappiness is the Mother of invention.&#8221; This came up in a conversation I had with my friend <a href=\"https://twitter.com/DaveyDeMille\" target=\"_blank\">@DaveyDeMille</a> over lunch last week. In other words, is being well-funded correlated with a higher research quality, as measured by the proportion of NSF grants that lead to a publication.</p>\n<p>First off, just some descriptive stats:</p>\n<p>\n<script src=\"http://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"745\" width=\"654\"><param name=\"host_url\" value=\"http%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"path\" value=\"shared/RPT2WQT38\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"http://public.tableausoftware.com/static/images/RP/RPT2WQT38/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"><param name=\"showTabs\" value=\"n\"></object></div>\n<div></div>\n<p>Now moving onto our question:</p>\n<p>\n<script src=\"http://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"815\" width=\"544\"><param name=\"host_url\" value=\"http%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"path\" value=\"shared/6GKKT2KZR\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"http://public.tableausoftware.com/static/images/6G/6GKKT2KZR/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"><param name=\"showTabs\" value=\"n\"></object></div>\n<p>\n<script src=\"http://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"815\" width=\"544\"><param name=\"host_url\" value=\"http%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"path\" value=\"shared/Q6PPSWGMB\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"http://public.tableausoftware.com/static/images/Q6/Q6PPSWGMB/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"><param name=\"showTabs\" value=\"n\"></object></div>\n<p>\n<script src=\"http://public.tableausoftware.com/javascripts/api/viz_v1.js\" type=\"text/javascript\"></script></p>\n<div class=\"tableauPlaceholder\"><object class=\"tableauViz\" height=\"595\" width=\"544\"><param name=\"host_url\" value=\"http%3A%2F%2Fpublic.tableausoftware.com%2F\"><param name=\"path\" value=\"shared/69MB48BM6\"><param name=\"toolbar\" value=\"yes\"><param name=\"static_image\" value=\"http://public.tableausoftware.com/static/images/69/69MB48BM6/1.png\"><param name=\"animate_transition\" value=\"yes\"><param name=\"display_static_image\" value=\"yes\"><param name=\"display_spinner\" value=\"yes\"><param name=\"display_overlay\" value=\"yes\"><param name=\"display_count\" value=\"yes\"><param name=\"showVizHome\" value=\"no\"><param name=\"showTabs\" value=\"n\"></object></div>\n<div></div>\n<p>So although this is pretty cursory, it appears that there&#8217;s not really a relationship between getting lots of NSF funding and lots of publication-yielding projects. I&#8217;d say, without digging more into this, that scrappiness is, if not the Mother, of invention, at least the aunt.</p>\n<p>EDIT: I&#8217;ve been reading up on UX lately, following <a href=\"http://52weeksofux.com/\" target=\"_blank\">52 Week of UX</a> (awesome resource, by the way), and came to Week 4 today. They have an excellent post on how constraints force creativity: go read it here: <a href=\"http://52weeksofux.com/post/358515571/constraints-fuel-creativity\" target=\"_blank\">Constraints Fuel Creativity</a>.</p>\n\n\n"}">Next ></a></p>
+				
 			</div>
 
 		</div><!-- /row -->
     </div> <!-- /container -->
 </div><!-- /white -->
 
-	
+<div class="grey">
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<b><a href="/2014/04/20/opticon2014.html">< Previous</a></b> | <b><a href="/2014/04/30/looking-at-data-2007-nsf-research-expenditures.html">Next ></a></b>
+			</div>
+
+		</div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /white -->
+
+
 	
 
 	<!-- +++++ Footer Section +++++ -->
@@ -146,19 +162,54 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var post_dates = $(".post_date");
 
-		post_dates.each(function( index ) {
-			var post_date = $( this ).text().split("-")
-		  	var yr = post_date[0];
-			var mo = months[post_date[1]-1];
-			var d = post_date[2].split(" ")[0];
-
-			if (d.charAt(0) === "0")
-				d = d.substring(1);
-			$( this ).text(mo + " " + d + ", " + yr);
+    	var i = 0;
+    	$('.post').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white');
+		  }
+		  else {
+		  	$(this).addClass('grey');
+		  }
+		  i++;
 		});
+
+    	var i = 0;
+    	$('.listing').each(function( index ) {
+		  if (i % 2 == 0) {
+		  	$(this).addClass('white_compact');
+		  }
+		  else {
+		  	$(this).addClass('grey_compact');
+		  }
+		  i++;
+		});
+
+    	function post_date_formatter() {
+			var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			var post_dates = $(".post_date");
+
+			post_dates.each(function( index ) {
+				var post_date = $( this ).text().split("-")
+			  	var yr = post_date[0];
+				var mo = post_date[1];
+				var d = post_date[2].split(" ")[0];
+
+				if (d.charAt(0) === "0")
+					d = d.substring(1);
+
+				if (window.innerWidth < 768) {
+					$( this ).text(mo + "/" + d + "/" + yr.substring(2));
+				}
+				else {
+					$( this ).text(months[mo-1] + " " + d + ", " + yr);
+				}
+			});
+
+		}
+
+		$( window ).resize(post_date_formatter());
+		
 	</script>
   </body>
 </html>
