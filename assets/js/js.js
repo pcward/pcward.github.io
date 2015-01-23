@@ -1,5 +1,5 @@
 if (document.referrer == "http://chris.ward.is/" || document.referrer == "http://pcward.tumblr.com") {
-	$('.overlay').show();
+	$('.overlay').show().delay(5000).slideUp();
 	console.log("Trigger redirect overlay.");
 }
 
