@@ -1,3 +1,8 @@
+if (document.referrer == "http://chris.ward.is/" || document.referrer == "http://pcward.tumblr.com") {
+	$('.overlay').show();
+	console.log("Trigger redirect overlay.");
+}
+
 // Zebra tables
 var i = 0;
 $('.post').each(function( index ) {
