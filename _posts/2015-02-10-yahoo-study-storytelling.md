@@ -3,15 +3,15 @@ layout: post
 title: Go On, Take A Nap — It's Good For Avoiding the Pseudo-Science in this Yahoo Story
 ---
 
-Yahoo, that trove of pseudo-scientific health news, today brought us a story about napping [Go On, Take A Nap — It's Good For Your Immune System](https://www.yahoo.com/health/go-on-take-a-nap-its-good-for-your-immune-110648301107.html).
+Yahoo, that trove of pseudo-scientific health news, today brought us a story about napping: [Go On, Take A Nap — It's Good For Your Immune System](https://www.yahoo.com/health/go-on-take-a-nap-its-good-for-your-immune-110648301107.html).
 
 The article starts out with the bold assertion that 
 
 > "Naps may be good for more than helping you stay alert and focused during the day — according to a small new study, they could also be a boon to the body’s immune system."
 
-How did they arrive at that conclusion? The study put 11 healthy males in a sleep lab and put them through two sleep treatments. After a nromal night's sleep (defined as eight hours), the first treatment consisted of sleep restriction, where subjects only slept from 2 to 4 AM, followed by a normal day of staying awake. Subjects returned to the lab some time later for the second intervention, which consisted of sleep restriction as in the previous study, but then two 30-minute naps during the following day. 
+How did they arrive at that conclusion? The study put 11 healthy males in a sleep lab and put them through two sleep interventions. After a normal night's sleep (defined as eight hours), the first intervention consisted of sleep restriction, where subjects only slept from 2 to 4 AM, followed by a normal day of staying awake. Subjects returned to the lab some time later for the second intervention, which consisted of sleep restriction as in the previous study, followed by two 30-minute naps during the following day. 
 
-Levels of norepinephrine and interleukin-6, hormones that are know to be influenced by sleep, or lack thereof, were measured throughout, and indeed the study found that these hormone levels were indeed influenced by the sleep patterns. The naps effectively normalized hormone values.
+Levels of norepinephrine and interleukin-6, hormones that are know to be influenced by sleep, or lack thereof, were measured throughout. Sure enough the study found these hormone levels were indeed influenced by the sleep patterns. The naps effectively normalized hormone values.
 
 This is where the Yahoo reporting turns to story telling, and the story gets really muddy. Queue this gem from one of the study authors:
 
@@ -25,7 +25,7 @@ It just gets worse from here. Segue some third-party expert to opine:
 
 Some aspects of the immune response promote better sleep, while others disrupt sleep? 
 
-That's completely backwards from what the study actually did! The study maipulated sleep patterns and examined levels of two immune-system-related hormones. In effect, the study said A (sleep patterns/napping) correlates with B (hormone levels).
+That's completely backwards from what the study actually did! The study manipulated sleep patterns and examined levels of two immune-system-related hormones. In effect, the study said A (sleep patterns/napping) correlates with B (hormone levels).
 
 The good doctor Gehrman seems to say that B causes A!
 
