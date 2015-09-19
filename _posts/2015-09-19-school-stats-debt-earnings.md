@@ -3,7 +3,7 @@ layout: post
 title: Higher Ed, Debt, and Earnings after 10 Years
 ---
 
-<img src="/assets/college_financials.png" title="college_financials" width="50%"/>
+<img src="/assets/college_financials.png" title="college_financials" width="75%"/>
 
 It seems you need to pick a college with a completion rate of no less than 54% (the mean completion rate in this sample) and an annual cost of attendance of at least roguhly $40,000/year. Why? Doing this minimizes risk of default on your student loans, minimize your student debt load upon graduation, and maximizes your 10-year earnings potential.
 
