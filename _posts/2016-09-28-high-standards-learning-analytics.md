@@ -21,6 +21,6 @@ We're excited to rejoin the Caliper community, and can't wait to see the amazing
 
  
 
-Keep learning,
-Chris Ward
+Keep learning,<br />
+Chris Ward<br />
 Product Manager, Data & Analytics
