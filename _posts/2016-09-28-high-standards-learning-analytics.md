@@ -5,7 +5,7 @@ title: High Standards for Learning Analytics
 
 NOTE: This is a repost of my original blog post here: [http://blog.canvaslms.com/high-standards-for-learning-analytics](http://blog.canvaslms.com/high-standards-for-learning-analytics)
 
-<img src="https://blog.canvaslms.com/hubfs/learn-1.jpg?t=1475077349276" title="High Standards for Learning Analytics" width="75%"/>
+<img src="https://blog.canvaslms.com/sites/blog.canvaslms/files/learn-1.jpg" title="High Standards for Learning Analytics" width="75%"/>
 
 When I reflect on Instructure’s commitment to openness, I can’t help thinking about Josh's keynote at this year's InstructureCon. He pointed out how, as a company, Instructure embraces openness in everything we do, from our business practices to our security audits. We support open education through our open platform, our open courses, and our OER repository.
 
